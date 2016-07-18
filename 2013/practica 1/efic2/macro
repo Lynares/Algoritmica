@@ -1,0 +1,13 @@
+#!/bin/csh -vx
+
+@ i = 10
+
+echo ""> rell.dat
+
+while ( $i < 300)
+
+echo " $i `./rell $i`" >> rell.dat
+
+@ i += 10
+
+end

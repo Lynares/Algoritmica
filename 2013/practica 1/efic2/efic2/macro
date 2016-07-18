@@ -1,0 +1,13 @@
+#!/bin/csh -vx
+
+@ i = 10
+
+echo ""> criba.dat
+
+while ( $i < 100000)
+
+echo " $i `./criba $i`" >> criba.dat
+
+@ i += 100
+
+end
